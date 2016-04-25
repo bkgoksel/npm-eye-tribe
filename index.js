@@ -2,7 +2,7 @@ var net = require('net');
 
 var port = 6555;
 var host = "localhost";
-var data = {};
+var data = {"values": {"frame": {"avg": {"x": 0, "y": 0}}}};
 
 module.exports.createConnection = function () {
 	var dataStream = net.createConnection(port, host);
