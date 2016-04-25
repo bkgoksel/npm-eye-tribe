@@ -15,18 +15,16 @@ module.exports.createConnection = function () {
 		"request": "set"
 	}));
 
-	dataStream.on('data', (message) => {
-		//message = message.toString();
+	dataStream.on('data', function (message){
 		var oldData = data;
 		try {
 			data = JSON.parse(message);
-			//message.substr(0, message.length-1));
 		} catch(e) {
 			data = oldData;
 		}
 	})
 
-	var heartbeat = setInterval(() => {
+	var heartbeat = setInterval(function (){
 		dataStream.write(JSON.stringify({
 			"category": "heartbeat",
 			"request": "null"
