@@ -1,11 +1,11 @@
-var net = require('net-browserify');
+var net = require('net');
 
 var port = 6555;
 var host = "localhost";
 var data = {"values": {"frame": {"avg": {"x": 0, "y": 0}}}};
 
 module.exports.createConnection = function () {
-	var dataStream = net.connect({port: port, 
+	var dataStream = net.connect({port: port,
 								 host: host});
 	dataStream.write(JSON.stringify({
 		"values": {
