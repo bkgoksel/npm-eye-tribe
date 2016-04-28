@@ -1,6 +1,6 @@
 {
   "name": "eye-tribe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An API wrapper for the Eye Tribe eye trackers.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "json-socket": "~0.1.2",
-	"net-browserify": "^0.2.3"
+    "net-browserify": "^0.2.3"
   }
 }
