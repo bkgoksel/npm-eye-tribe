@@ -1,4 +1,4 @@
-var net = require('net');
+var net = require('net-browserify');
 
 var port = 6555;
 var host = "localhost";
