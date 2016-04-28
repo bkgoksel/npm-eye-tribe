@@ -23,6 +23,7 @@
     "url": "https://github.com/bkgoksel/npm-eye-tribe/issues"
   },
   "dependencies": {
-    "json-socket": "~0.1.2"
+    "json-socket": "~0.1.2",
+	"net-browserify": "^0.2.3"
   }
 }
